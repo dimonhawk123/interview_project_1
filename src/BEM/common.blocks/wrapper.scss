@@ -1,0 +1,36 @@
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;    
+    position: relative;
+    &__top {
+        display: flex;
+        flex-direction: row;
+        padding-top: 25px;
+    }
+
+    &__logo {
+        flex-grow: 1;
+    }
+
+
+    &__content {
+        text-align: center;       
+        position: absolute; 
+        top: 55%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+
+    &__button {
+        margin-top: 30px;
+    }
+
+    &_theme_gray {
+        color: gray;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+}

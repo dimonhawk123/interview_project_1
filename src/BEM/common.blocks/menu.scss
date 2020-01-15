@@ -1,0 +1,27 @@
+.menu {
+    display: flex;
+    align-items: flex-end;
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+    }
+
+    &__item {
+        display: inline;
+        margin-left: 10px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+
+        &:active {
+            color: white;
+        }
+
+        &:hover {
+            border-bottom: 2px solid white;
+        }
+    }
+}

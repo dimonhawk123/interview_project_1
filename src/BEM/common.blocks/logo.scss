@@ -1,0 +1,14 @@
+.logo {
+    font-weight: 600;
+    font-size: 24px;
+
+    &__letter {
+        font-size: 44px;
+        text-decoration: none;
+        color: white;
+        
+        &:active {
+            color: white;
+        }             
+    }
+}

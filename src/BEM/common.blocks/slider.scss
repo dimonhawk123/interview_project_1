@@ -1,0 +1,16 @@
+.slider {
+    width: 100%;
+    border: 1px solid gray;
+    overflow: hidden;
+    padding: 0 20px;
+
+    &__list {
+        padding-left: 0;
+        width: 4999px;
+        list-style-type: none;
+    }
+
+    &__item {
+        display: inline;
+    }
+}

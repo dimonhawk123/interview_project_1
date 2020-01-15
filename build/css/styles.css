@@ -1,0 +1,104 @@
+.button {
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  outline: none;
+  background: transparent; }
+  .button:hover {
+    cursor: pointer; }
+
+.header {
+  background: url("../../static/img/bg1.jpg");
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-family: 'Playfair Display', serif; }
+
+.logo {
+  font-weight: 600;
+  font-size: 24px; }
+  .logo__letter {
+    font-size: 44px;
+    text-decoration: none;
+    color: white; }
+    .logo__letter:active {
+      color: white; }
+
+.menu {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+  align-items: flex-end; }
+  .menu__list {
+    list-style-type: none;
+    margin: 0; }
+  .menu__item {
+    display: inline;
+    margin-left: 10px; }
+  .menu__link {
+    text-decoration: none;
+    color: white; }
+    .menu__link:active {
+      color: white; }
+    .menu__link:hover {
+      border-bottom: 2px solid white; }
+
+.slider {
+  width: 100%;
+  border: 1px solid gray;
+  overflow: hidden;
+  padding: 0 20px; }
+  .slider__list {
+    padding-left: 0;
+    width: 4999px;
+    list-style-type: none; }
+  .slider__item {
+    display: inline; }
+
+.section__title {
+  margin-top: 20px;
+  font-size: 40px;
+  border-left: 8px solid gray;
+  padding-left: 10px; }
+
+.section__content {
+  margin-top: 20px;
+  font-size: 20px; }
+
+.title {
+  font-size: 53px;
+  font-weight: 700; }
+
+.wrapper {
+  max-width: 1280px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative; }
+  .wrapper__top {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    padding-top: 25px; }
+  .wrapper__logo {
+    -webkit-box-flex: 1;
+    flex-grow: 1; }
+  .wrapper__content {
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .wrapper__button {
+    margin-top: 30px; }
+  .wrapper_theme_gray {
+    color: gray;
+    font-family: 'Open Sans Condensed', sans-serif; }
