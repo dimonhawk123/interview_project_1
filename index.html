@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="static/favicon.png" sizes="48x48" type="image/png">
         <title>Resume</title>
         <link rel="stylesheet" type="text/css" href="test_folder/normalize.css">
         <link rel="stylesheet" type="text/css" href="build/css/styles.css">
@@ -48,12 +49,39 @@
 
         <main class="wrapper wrapper_theme_gray">
             <!--About-->
-            <div class="section">
+            <div class="section about" id="about">
                 <div class="section__title">
                     Обо мне
                 </div>
-                <div class="section__content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, animi.
+                <div class="section__content ">
+                    <div class="section__menu menu menu_main">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link menu__link_main menu__link_first" href="#" id="id">Личная информация</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link_main" href="#" id="job">Желаемая должность</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link_main" href="#" id="contact">Контактная информация</a>
+                            </li>
+                        </ul>
+                    </div>                
+                    <div class=" block">
+                        <div class="block__info block__info_id" id="#id">
+                            <p><span class="block__text">Ф.И.О:</span> Рыжков Дмитрий Витальевич </p>
+                            <p><span class="block__text">Дата рождения:</span> 02.04.1997 </p>
+                            <p><span class="block__text">Адрес проживания:</span> г. Челябинск, Курчатовский район, ул. Ворошилова  </p>
+                        </div>
+                        <div class="block__info block__info_job" id="#job">
+                            <p><span class="block__text">Желаемая должность:</span> Junior Frontend Developer</p>
+                        </div>
+                        <div class="block__info block__info_contact" id="#contact">
+                            <p><span class="block__text">Телефон:</span> +7 (908) 824-80-30 </p>
+                            <p><span class="block__text">E-mail:</span> ryzhkov.eecs@gmail.com </p>
+                            <p><span class="block__text">GitHub:</span> <a href="https://github.com/dimonhawk123">https://github.com/dimonhawk123</a> </p>                       
+                        </div>   
+                    </div>
                 </div>
             </div>
             <!--Slider-->
@@ -78,20 +106,53 @@
             </div>
 
             <!--Education-->
-            <div class="edu">
+            <div class="section edu" id="edu">
                 <div class="section__title">
                     Образование
                 </div>
-                <div class="section__content">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+                <div class="section__content ">
+                    <div class="section__menu menu menu_main">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link menu__link_main menu__link_first" href="#" id="main_edu">Основное образование</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link_main" href="#" id="add_edu">Дополнительное образование</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link_main" href="#" id="lang">Иностранные языки</a>
+                            </li>
+                        </ul>
+                    </div>                
+                    <div class="block block_edu">
+                        <div class="block__info block__info_main_edu" id="#main_edu">
+                            <p><span class="block__text">Бакалавриат.</span> <br /> 
+                            Южно-Уральский государственный университет. Высшая школа электроники и компьютерных наук
+                            (приборостроительный факультет). Направление: управление и информатика в технических системах. 
+                            Бакалавр 2015-2019 г. </p>
+                            <p><span class="block__text">Магистратура.</span> <br />  
+                            Южно-Уральский государственный университет. Высшая школа электроники и компьютерных наук
+                            (приборостроительный факультет). Направление: информатика и вычислительная техника.
+                            Магистр 2019-2021 г. </p>                            
+                        </div>
+                        <div class="block__info block__info_add_edu" id="#add_edu">
+                            <p><span class="block__text">Двухмесячные курсы по web разработке в МИДиС</span> от компаний XPage, Intec, Цифровой элемент.</p>
+                        </div>
+                        <div class="block__info block__info_lang" id="#lang">
+                            <p><span class="block__text">Английский язык: </span> уровень - intermediate. </p>
+                        </div>   
+                    </div>
                 </div>
-            </div>
+            </div>            
         </main>
-        <footer>
-            <!--Copyright-->
-            <div class="copy"></div>
+        <footer class="header header_theme_footer">
+            <div class="wrapper wrapper-copy">
+                <!--Copyright-->
+                <div class="copy">
+                    &copy;Моя страница, 2020.
+                </div>
+            </div>            
         </footer>
+        <script src="build/js/scripts.js"></script>
     </body>
 </html>

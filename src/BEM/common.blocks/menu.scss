@@ -1,20 +1,24 @@
 .menu {
     display: flex;
     align-items: flex-end;
-
+    
     &__list {
         list-style-type: none;
         margin: 0;
+        padding-left: 0;
+        
+
     }
 
     &__item {
         display: inline;
-        margin-left: 10px;
+        
     }
 
     &__link {
         text-decoration: none;
         color: white;
+        margin: 0 0 0 10px;
 
         &:active {
             color: white;
@@ -23,5 +27,28 @@
         &:hover {
             border-bottom: 2px solid white;
         }
+
+        &_main {
+            color: gray;
+            border-bottom: 2px solid gray;
+            margin: 0 10px 0 0;
+
+            &:active {
+                color: gray;
+            }
+    
+            &:hover {
+                border-bottom: 2px solid gray;
+            }
+        }
+
+        &_first {
+            font-weight: bold;
+        }
+    }
+
+    &_main {
+        font-size: 24px;
+        margin-top: 10px;
     }
 }

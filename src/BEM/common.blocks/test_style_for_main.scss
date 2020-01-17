@@ -25,3 +25,58 @@
 //         padding-left: 10px;
 //     }
 // }
+
+.block {
+    position: relative;
+    height: 150px;
+
+    &__info {
+        position: absolute;
+        transition: opacity 0.3s ease-out;
+        // top: 0;
+        // right: 0;
+        // bottom: 0;
+        // left: 0;
+    
+        &_id {
+            opacity: 1;
+        }
+    
+        &_job {
+            opacity: 0;
+        }
+    
+        &_contact {
+            opacity: 0;
+        }
+
+        &_main_edu {
+            opacity: 1;
+        }
+    
+        &_add_edu {
+            opacity: 0;
+        }
+    
+        &_lang {
+            opacity: 0;
+        }
+    }
+
+    &__text {
+        font-weight: bold;
+    }
+
+    &_edu {
+        height: 195px;
+    }
+}
+
+.wrapper-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.copy {
+    // padding-top: 50px;
+}

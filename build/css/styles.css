@@ -16,6 +16,8 @@
   background-size: cover;
   color: white;
   font-family: 'Playfair Display', serif; }
+  .header_theme_footer {
+    height: 100px; }
 
 .logo {
   font-weight: 600;
@@ -34,17 +36,31 @@
   align-items: flex-end; }
   .menu__list {
     list-style-type: none;
-    margin: 0; }
+    margin: 0;
+    padding-left: 0; }
   .menu__item {
-    display: inline;
-    margin-left: 10px; }
+    display: inline; }
   .menu__link {
     text-decoration: none;
-    color: white; }
+    color: white;
+    margin: 0 0 0 10px; }
     .menu__link:active {
       color: white; }
     .menu__link:hover {
       border-bottom: 2px solid white; }
+    .menu__link_main {
+      color: gray;
+      border-bottom: 2px solid gray;
+      margin: 0 10px 0 0; }
+      .menu__link_main:active {
+        color: gray; }
+      .menu__link_main:hover {
+        border-bottom: 2px solid gray; }
+    .menu__link_first {
+      font-weight: bold; }
+  .menu_main {
+    font-size: 24px;
+    margin-top: 10px; }
 
 .slider {
   width: 100%;
@@ -67,6 +83,39 @@
 .section__content {
   margin-top: 20px;
   font-size: 20px; }
+
+.block {
+  position: relative;
+  height: 150px; }
+  .block__info {
+    position: absolute;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out; }
+    .block__info_id {
+      opacity: 1; }
+    .block__info_job {
+      opacity: 0; }
+    .block__info_contact {
+      opacity: 0; }
+    .block__info_main_edu {
+      opacity: 1; }
+    .block__info_add_edu {
+      opacity: 0; }
+    .block__info_lang {
+      opacity: 0; }
+  .block__text {
+    font-weight: bold; }
+  .block_edu {
+    height: 195px; }
+
+.wrapper-copy {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center; }
 
 .title {
   font-size: 53px;
