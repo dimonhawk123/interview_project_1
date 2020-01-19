@@ -22,7 +22,7 @@ function about(event) {
             item.style.opacity = 0;            
         }        
     })    
-}
+} 
 
 //-------------------------------------------------
 
@@ -99,11 +99,34 @@ function switcher() {
 
 function pathWidth() {
     countPath++;
-    if (countPath == 151) {
+    if (countPath == 301) {
         countPath = 0;   
         switcher();     
     }
-    width.style.width = (1198/150) * countPath + 'px';
+    width.style.width = (100/300) * countPath + '%';
 }
 
-interval = setInterval(pathWidth, 40);
+interval = setInterval(pathWidth, 20);
+
+
+//--------------------------------------------------
+
+//нет возможности использовать scrollIntoView
+//потому что не поддерживается некоторыми браузерами 
+
+//используем полифил Smooth Scroll behavior polyfill
+
+// import smoothscroll from 'smoothscroll-polyfill';
+
+// smoothscroll.polyfill();
+
+let refs = document.querySelectorAll('.header .menu__link');
+
+for (let ref of refs) {
+    ref.addEventListener('click', function(event) {
+        event.preventDefault();
+        let anchorId = event.target.getAttribute('href');
+        let anchor = document.querySelector(anchorId);
+        anchor.scrollIntoView({behavior: 'smooth'});
+    });
+}
