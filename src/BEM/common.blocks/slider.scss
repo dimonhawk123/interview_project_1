@@ -3,14 +3,30 @@
     border: 1px solid gray;
     overflow: hidden;
     padding: 0 20px;
+    
+    position: relative;
 
+    &__wrap {
+        overflow: hidden;
+    }
     &__list {
-        padding-left: 0;
+        padding: 20px 0;
         width: 4999px;
         list-style-type: none;
+        margin: 0;
+        transition: margin-left 1s ease-in-out;
+        display: flex;
+        flex-direction: row;
     }
 
     &__item {
-        display: inline;
+        // display: inline;
+        // float: left;
+        height: 300px;
+        width: 300px;
+        img {
+            height: 100%;
+            width: 100%;
+        }
     }
 }
