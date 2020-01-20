@@ -7,6 +7,7 @@
     position: relative;
     color: white;
     font-family: 'Playfair Display', serif;
+
     &__top {
         display: flex;
         flex-direction: row;
@@ -16,7 +17,6 @@
     &__logo {
         flex-grow: 1;
     }
-
 
     &__content {
         text-align: center;       

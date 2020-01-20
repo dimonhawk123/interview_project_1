@@ -1,0 +1,15 @@
+.section {
+    // padding-top: 20px;
+    font-size: 20px;
+
+    &__title {
+        margin-top: 20px;
+        font-size: 40px;
+        border-left: 8px solid gray;
+        padding-left: 10px;
+    }
+
+    &__content {
+        margin-top: 20px;        
+    }
+}

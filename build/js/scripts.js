@@ -1,9 +1,10 @@
+
+
+
 //-------------------------------------------------
 
 let arr = Array.from(document.querySelector('.section_theme_about .block').children);
 let links = document.querySelectorAll('.section_theme_about .menu__link');
-
-
 
 function about(arr, links, event) {    
     for (let link of Array.from(links)) {        
@@ -23,6 +24,7 @@ function about(arr, links, event) {
         }        
     })    
 } 
+
 for(i = 0; i < links.length; i++) {
     links[i].addEventListener('click', about.bind(null, arr, links));
 }
