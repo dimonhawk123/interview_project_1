@@ -1,5 +1,6 @@
 .section {
     // padding-top: 20px;
+    font-size: 20px;
 
     &__title {
         margin-top: 20px;
@@ -9,8 +10,7 @@
     }
 
     &__content {
-        margin-top: 20px;
-        font-size: 20px;
+        margin-top: 20px;        
     }
 }
 
@@ -32,33 +32,41 @@
 
     &__info {
         position: absolute;
-        transition: opacity 0.3s ease-out;
+        transition: visibility 0s ease, opacity 1s ease;
         // top: 0;
         // right: 0;
         // bottom: 0;
         // left: 0;
     
         &_id {
+            visibility: visible;
             opacity: 1;
         }
     
         &_job {
+            visibility: hidden;
             opacity: 0;
+            
         }
     
         &_contact {
+            visibility: hidden;
             opacity: 0;
+            
         }
 
         &_main_edu {
+            visibility: visible;
             opacity: 1;
         }
     
         &_add_edu {
+            visibility: hidden;
             opacity: 0;
         }
     
         &_lang {
+            visibility: hidden;
             opacity: 0;
         }
     }
@@ -82,14 +90,14 @@
 }
 
 
-.btn-right {
+.btn-svg {
     height: 22px;
     width: 15px;
     vertical-align: middle;
 } 
 
 
-.slider-btn {
+.slider__btn {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -98,12 +106,11 @@
     // padding: 5px;
     text-align: center;
     
-    &__left {
-        left: 0;
-        
+    &_left {
+        left: 0;        
     }
 
-    &__right {
+    &_right {
         right: 0;
     }
 
@@ -113,13 +120,16 @@
     }
 }
 
+.slider__path {
+    margin-bottom: 20px;
+}
 .path {
     width: 100%;
     height: 5px;
     border: 1px solid gray;
-    margin-bottom: 20px;
+    
 
-    &_gray {
+    &__inside {
         width: 0;
         background-color: grey;
         height: 100%;

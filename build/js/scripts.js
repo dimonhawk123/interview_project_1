@@ -1,13 +1,11 @@
 //-------------------------------------------------
 
-let arr = Array.from(document.querySelector('.about .block').children);
-let links = document.querySelectorAll('.about .menu__link');
+let arr = Array.from(document.querySelector('.section_theme_about .block').children);
+let links = document.querySelectorAll('.section_theme_about .menu__link');
 
-for(i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', about);
-}
 
-function about(event) {    
+
+function about(arr, links, event) {    
     for (let link of Array.from(links)) {        
         if (event.target == link) {
             event.target.style.fontWeight = 'bold';
@@ -17,67 +15,69 @@ function about(event) {
     }        
     arr.map(function(item){        
         if (item.id == ('#' + event.target.id)) {
-            item.style.opacity = 1;            
+            item.style.opacity = 1;    
+            item.style.visibility = 'visible';        
         } else {
-            item.style.opacity = 0;            
+            item.style.opacity = 0;        
+            item.style.visibility = 'hidden';    
         }        
     })    
 } 
-
+for(i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', about.bind(null, arr, links));
+}
 //-------------------------------------------------
 
-let arr_edu = Array.from(document.querySelector('.edu .block').children);
-let links_edu = document.querySelectorAll('.edu .menu__link');
+let arr_edu = Array.from(document.querySelector('.section_theme_edu .block').children);
+let links_edu = document.querySelectorAll('.section_theme_edu .menu__link');
 
 for(i = 0; i < links_edu.length; i++) {
-    links_edu[i].addEventListener('click', edu);
+    links_edu[i].addEventListener('click', about.bind(null, arr_edu, links_edu));
 }
 
-function edu(event) {    
-    for (let link_edu of Array.from(links_edu)) {        
-        if (event.target == link_edu) {
-            event.target.style.fontWeight = 'bold';
-        } else {
-            link_edu.style.fontWeight = 'normal';
-        }
-    }        
-    arr_edu.map(function(item){        
-        if (item.id == ('#' + event.target.id)) {
-            item.style.opacity = 1;            
-        } else {
-            item.style.opacity = 0;            
-        }        
-    })    
-}
+// function edu(event) {    
+//     for (let link_edu of Array.from(links_edu)) {        
+//         if (event.target == link_edu) {
+//             event.target.style.fontWeight = 'bold';
+//         } else {
+//             link_edu.style.fontWeight = 'normal';
+//         }
+//     }        
+//     arr_edu.map(function(item){        
+//         if (item.id == ('#' + event.target.id)) {
+//             item.style.opacity = 1;  
+//             item.style.visibility = 'visible';           
+//         } else {
+//             item.style.opacity = 0;  
+//             item.style.visibility = 'hidden';            
+//         }        
+//     })    
+// }
 
 //-------------------------------------------------
 
-let leftBtn = document.querySelector('.slider-btn__left');
-let rightBtn = document.querySelector('.slider-btn__right');
+let leftBtn = document.querySelector('.slider__btn_left');
+let rightBtn = document.querySelector('.slider__btn_right');
 let elemCount = document.querySelector('.slider__list').children.length;
 let slider = document.querySelector('.slider__list');
 let visibleElem = 4;
 let iter = 0;
 let interval;
 let countPath = 0;
-let width =  document.querySelector('.path_gray');
+let width =  document.querySelector('.path__inside');
 
-leftBtn.onclick = function() {
-    clearInterval(interval);
+leftBtn.onclick = function() {    
     countPath = 0;
     iter--;
     if (iter < 0) {
         iter = elemCount - visibleElem;
     }
-    slider.style.marginLeft = iter * -300 + 'px';
-    interval = setInterval(pathWidth, 40);
+    slider.style.marginLeft = iter * -300 + 'px';    
 }
 
 rightBtn.onclick = function() {
-    clearInterval(interval);
     countPath = 0;
     switcher();
-    interval = setInterval(pathWidth, 40);
 }
 
 function switcher() {
@@ -120,7 +120,7 @@ interval = setInterval(pathWidth, 20);
 
 // smoothscroll.polyfill();
 
-let refs = document.querySelectorAll('.header .menu__link');
+let refs = document.querySelectorAll('.background .menu__link');
 
 for (let ref of refs) {
     ref.addEventListener('click', function(event) {
