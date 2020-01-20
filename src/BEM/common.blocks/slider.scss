@@ -29,4 +29,31 @@
             width: 100%;
         }
     }
+
+    &__btn {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        height: 27px;
+        width: 27px;
+        // padding: 5px;
+        text-align: center;
+        
+        &_left {
+            left: 0;        
+        }
+    
+        &_right {
+            right: 0;
+        }
+    
+        &:hover {
+            background-color: rgba(250, 161, 177, .5);
+            cursor: pointer;
+        }
+    }
+
+    &__path {
+        margin-bottom: 20px;
+    }
 }

@@ -1,0 +1,47 @@
+.block {
+    position: relative;
+    height: 150px;
+
+    &__info {
+        position: absolute;
+        transition: visibility 0s ease, opacity 1s ease;
+            
+        &_id {
+            visibility: visible;
+            opacity: 1;
+        }
+    
+        &_job {
+            visibility: hidden;
+            opacity: 0;            
+        }
+    
+        &_contact {
+            visibility: hidden;
+            opacity: 0;            
+        }
+
+        &_main_edu {
+            visibility: visible;
+            opacity: 1;
+        }
+    
+        &_add_edu {
+            visibility: hidden;
+            opacity: 0;
+        }
+    
+        &_lang {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+
+    &__text {
+        font-weight: bold;
+    }
+
+    &_edu {
+        height: 195px;
+    }
+}

@@ -1,0 +1,12 @@
+.path {
+    width: 100%;
+    height: 5px;
+    border: 1px solid gray;
+    
+
+    &__inside {
+        width: 0;
+        background-color: grey;
+        height: 100%;
+    }
+}
