@@ -17,7 +17,7 @@
 
     &__logo {
         flex-grow: 1;
-    }
+    } 
 
     &__content {
         text-align: center;       
@@ -26,104 +26,20 @@
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%)
-    }
+    } 
 
     &__button {
         margin-top: 30px;
-    }
+    }  
 
     &_theme_gray {
         color: gray;
         font-family: 'Open Sans Condensed', sans-serif;
-    }
+    }  
 
     &_theme_footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-}
-
-/* Media queries */
-@media(max-width: 1300px) {
-    .wrapper {
-        max-width: 1024px;
-    }
-    .slider__item {
-        width: 236px;
-        height: 236px;
-    }
-}
-
-@media(max-width: 1024px) {
-    .slider {
-        display: none;
-    }
-    .section__skills {
-        display: block;
-    }
-}
-
-@media(max-width: 900px) {
-    .block_edu {
-        height: 240px;
-    }    
-}
-
-@media(max-width: 700px) {
-    .section__content{
-        display: none;
-    }
-    .block_hidden {
-        display: block;
-        height: auto;
-        font-size: 20px;
-    }
-    .wrapper__menu {   
-        position: absolute;
-        right: 18px;
-        top: 73px;
-        text-align: center;
-        max-height: 0px;
-        overflow: hidden;
-    }
-    .menu__toggle {
-        display: block;
-        margin-right: 40px;
-    }
-    .title {
-        font-size: 38px;
-    }
-    .menu__item {
-        display: block;
-        padding-bottom: 10px;
-    }
-    .menu__link {
-        margin: 0;
-    }
-    .menu__list :last-child {
-        padding-bottom: 0;
-    }
-    .active {
-        max-height: 150px;
-        border: 2px solid white;
-        padding: 10px;   
-   }   
-   .block__info {
-       position: static;
-   }  
-   .block_edu, .block {
-       height: auto;
-   }
-   %visibility {
-        visibility: visible;
-        opacity: 1;
-   }
-   .block__info_add_edu,  .block__info_lang, .block__info_job,
-   .block__info_contact, .block__info_id, .block__info_main_edu {
-       @extend %visibility;
-   }  
-   .section__menu {
-       display: none;
-   }   
 } 
