@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
-const del = require('del');
 
 const css = [ 
     '../node_modules/normalize.css/normalize.css',  
@@ -36,9 +35,3 @@ gulp.task('watch', function() {
     gulp.watch(css, gulp.series('styles'));
     gulp.watch(js, gulp.series('scripts'));
 });
-
-gulp.task('clear', function() {
-    del(['../build/*']); 
-});
-
-gulp.task('build', gulp.parallel('styles', 'scripts'));
