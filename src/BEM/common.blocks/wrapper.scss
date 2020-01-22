@@ -116,6 +116,14 @@
 }
 
 @media(max-width: 700px) {
+    .section__content{
+        display: none;
+    }
+    .block_hidden {
+        display: block;
+        height: auto;
+        font-size: 20px;
+    }
     .wrapper__menu{
         // display: none;
         
@@ -128,21 +136,25 @@
     }
     .menu__toggle {
         display: block;
-        margin-right: 27px;
+        margin-right: 40px;
     }
     .title {
         font-size: 38px;
     }
     .menu__item {
         display: block;
+        padding-bottom: 10px;
     }
     .menu__link {
-        margin: 0 0 10px 0;
+        margin: 0;
+    }
+    .menu__list :last-child {
+        padding-bottom: 0;
     }
     .active {
-        max-height: 70px;
+        max-height: 150px;
         border: 2px solid white;
-        padding: 5px;   
+        padding: 10px;   
    }
    
    .block__info {

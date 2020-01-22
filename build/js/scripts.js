@@ -7,7 +7,7 @@
 
 // smoothscroll.polyfill();
 
-let refs = document.querySelectorAll('.background .menu__link');
+let refs = document.querySelectorAll('.background .menu__link, .wrapper__button.button');
 
 for (let ref of refs) {
     ref.addEventListener('click', function(event) {
