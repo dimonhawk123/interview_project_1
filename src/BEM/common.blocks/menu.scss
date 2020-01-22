@@ -1,7 +1,7 @@
 .menu {
-    display: flex;
-    align-items: flex-end;
-    
+    // display: flex;
+    // align-items: flex-end;
+    transition: .5s ease;
     &__list {
         list-style-type: none;
         margin: 0;

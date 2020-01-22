@@ -37,3 +37,8 @@
 
 //--------------------------------------------------
 
+let active = document.querySelector('.menu-mobile');
+let style = document.querySelector('.menu');
+active.onclick = function() {
+    style.classList.toggle('active');
+}
