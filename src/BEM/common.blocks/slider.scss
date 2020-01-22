@@ -2,13 +2,13 @@
     width: 100%;
     border: 1px solid gray;
     overflow: hidden;
-    padding: 0 20px;
-    
+    padding: 0 20px;    
     position: relative;
 
     &__wrap {
         overflow: hidden;
     }
+
     &__list {
         padding: 20px 0;
         width: 4999px;
@@ -19,9 +19,7 @@
         flex-direction: row;
     }
 
-    &__item {
-        // display: inline;
-        // float: left;
+    &__item {        
         height: 300px;
         width: 300px;
         img {
@@ -35,8 +33,7 @@
         top: 50%;
         transform: translate(0, -50%);
         height: 27px;
-        width: 27px;
-        // padding: 5px;
+        width: 27px;        
         text-align: center;
         
         &_left {

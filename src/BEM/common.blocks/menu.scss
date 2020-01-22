@@ -1,7 +1,6 @@
-.menu {
-    // display: flex;
-    // align-items: flex-end;
+.menu {    
     transition: .5s ease;
+    
     &__list {
         list-style-type: none;
         margin: 0;
@@ -10,6 +9,14 @@
 
     &__item {
         display: inline;
+    }
+
+    &__toggle {    
+        display: none;
+        position: relative;
+        width: 40px;
+        height: 40px; 
+        cursor: pointer;  
     }
 
     &__link {

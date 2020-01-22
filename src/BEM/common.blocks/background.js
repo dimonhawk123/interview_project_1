@@ -3,12 +3,10 @@
 
 //используем полифил Smooth Scroll behavior polyfill
 
-// import smoothscroll from 'smoothscroll-polyfill';
-
-// smoothscroll.polyfill();
-
+//получаем все элементы, при помощи которым можем перейти к якорю
 let refs = document.querySelectorAll('.background .menu__link, .wrapper__button.button');
 
+//на каждый полученный элемент вешаем обработчик события клика мыши 
 for (let ref of refs) {
     ref.addEventListener('click', function(event) {
         event.preventDefault();
