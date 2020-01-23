@@ -26,7 +26,7 @@ function about(arr, links, event) {
     })    
 } 
 // на каждую ссылку в секции "обо мне" вешаем обработчик клика мыши
-for(i = 0; i < links_about.length; i++) {
+for(let i = 0; i < links_about.length; i++) {
     links_about[i].addEventListener('click', about.bind(null, arr_about, links_about));
 }
 //-------------------------------------------------
@@ -34,6 +34,6 @@ for(i = 0; i < links_about.length; i++) {
 let arr_edu = Array.from(document.querySelector('.section_theme_edu .block').children);
 let links_edu = document.querySelectorAll('.section_theme_edu .menu__link');
 
-for(i = 0; i < links_edu.length; i++) {
+for(let i = 0; i < links_edu.length; i++) {
     links_edu[i].addEventListener('click', about.bind(null, arr_edu, links_edu));
 }
