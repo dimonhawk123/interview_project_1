@@ -6,6 +6,7 @@ const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const cleanCss = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
+const del = require('del');
 
 const css = [ 
     './src/libs/normalize.css/normalize.css',  
@@ -49,3 +50,16 @@ gulp.task('watch', function() {
     gulp.watch(css, gulp.series('styles'));
     gulp.watch(js, gulp.series('scripts'));
 });
+
+function clean() {
+    return del(['./build/*']);
+}
+
+gulp.task('build', 
+    gulp.series(clean,
+        gulp.parallel('scripts', 'styles'))
+);
+
+gulp.task('dev', 
+    gulp.series('build', 'watch')
+);
